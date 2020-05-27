@@ -1,5 +1,7 @@
 # Infinity Quine
-## By Ervin Baccay
+### By Ervin Baccay
+
+## Explanation
 
 I wanted to do something on the abstract "number" of infinity. Ever since high school, I've been particularly obsessed with the
 concept of infinity. Because of this, the number that I was going to creatively interpret is infinity.
@@ -24,4 +26,16 @@ the new file `infinity_quine.txt`. Then, by setting the boundaries of `infinity_
 of infinity appears. Also by just running `python infinity_quine.py`, the entire program is revealed. The code is not
 just outputting the contents of itself in order, but rather algorithmically _reconstructing_ itself in an infinite loop.
 
-You can find the code here! https://github.com/ebaccay/art_w23ac/tree/master/data_as_material
+## How I Did It
+1) Sketch an infinity symbol on my iPad and transfer to my computer. This original drawing is `infinity_pre.png`
+2) Use [this website](https://www.text-image.com/convert/ascii.html) to convert this image into ASCII. A width of 500 
+characters was used.
+3) Using the code found [here](https://codegolf.stackexchange.com/questions/118373/print-a-quine-that-contains-the-input),  I 
+then created `quinify.py` in order to create the quine version of the artwork.
+4) Run `python quinify.py > infinity_quine.py` in order to create the actual quine file which is `infinity_quine.py`.
+5) Run `python infinity_quine.py > test_quine.py` to replicate the program.
+6) Running `python infinity_quine.py` or `python test_quine.py` will output the same thing!
+
+*Note*: I had to change all non-alphabet characters in the original ASCII art to alphabet characters in order to actually get
+the quine to work. I also padded space on the right side of the image for the same purpose. To view the image, you must set
+your text editor to only have 500 characters per line otherwise the entire image will blend together and look bad.
