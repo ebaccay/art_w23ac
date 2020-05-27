@@ -1,6 +1,8 @@
 # Infinity Quine
 ### By Ervin Baccay
 
+![](https://github.com/ebaccay/art_w23ac/blob/master/data_as_material/quine.png)
+
 ## Explanation
 
 I wanted to do something on the abstract "number" of infinity. Ever since high school, I've been particularly obsessed with the
